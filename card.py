@@ -40,7 +40,9 @@ class Card():
         self.quality = 0
     
     def getMedia(self):
-        media = []
+        print("attempting to get media for ", self.english)
+        mp4s, labels = get_media(self.english)
+        media = {"mp4s": mp4s, "labels": labels}
         # placeholder
         return media
 

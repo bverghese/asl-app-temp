@@ -3,8 +3,6 @@ import json
 filename = 'ASL Browser notes.txt'
 
 
-
-
 with open(filename) as file, open('dump.json', 'w') as json_file:
     items = []
     for line in file:
@@ -31,7 +29,7 @@ print(items)
 #         # for output see below
 #         print(description) 
 
-#         # for automatic creation of id for each employee
+#         # for automatic creation of id for each term
 #         sno ='emp'+str(l)
       
 #         # loop variable
@@ -42,11 +40,11 @@ print(items)
 
 #         while i<len(fields):
               
-#             # creating dictionary for each employee
+#             # creating dictionary for each term
 #             dict2[fields[i]]= description[i]
 #             i = i + 1
                   
-#         # appending the record of each employee to
+#         # appending the record of each term to
 #         # the main dictionary
 #         dict1[sno]= dict2
 #         l = l + 1
